@@ -1,3 +1,3 @@
 # Projects
 # Personal projects
-This repo contains some personal projects that I find helpful or fun.
+small fighting game in the terminal between different kinds of fighters with different perks.
