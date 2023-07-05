@@ -37,7 +37,7 @@ class Mage(Fighter):
             target.receive_damage(30)
 
 
-# the healer has 5 better potions
+# the healer has 5 better potions and a better healing
 class Healer(Fighter):
     def __init__(self, name):
         super().__init__(200, 15, 25, 30, 20, 1.5, 150, 35, 45, 60, 25)
@@ -66,3 +66,5 @@ class Trickster(Fighter):
         dodge = random.randint(0, 100)
         if dodge > 10:  # in case the trickster didn't manage to dodge the attack
             super().receive_damage(damage)
+        else:
+            super().receive_damage(0)
